@@ -1,0 +1,19 @@
+.signup-form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2%;
+}
+
+.inputbox > input {
+    width: 410px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.inputbox2 > input {
+    width: 410px;
+    height: 30px;
+    margin-bottom: 8px;
+}
