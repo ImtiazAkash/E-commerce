@@ -1,7 +1,10 @@
-<?php include_once('./header.php') ?>
+<?php
+session_start();
+include_once('./header.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +12,30 @@
     <link rel="stylesheet" href="../../styles/style.css">
     <title>Register</title>
 </head>
-<body>
-<div class="signup-form mt-5 shadow-lg">
+
+<body>0
+    <div class="signup-form mt-5 shadow-lg">
+        <?php
+        if (@$_SESSION['msg'] != "") {
+        ?>
+
+            <div class="alert alert-warning" role="alert">
+                <?= $_SESSION['msg']; ?>
+
+            </div>
+        <?php echo $_SESSION['msg'] = "";
+        } ?>
+        
         <div>
             <h2>Register</h2>
             <hr class="mb-3">
         </div>
-        <form>
+        <form action="../actions/insert_action.php" method="post" enctype="multipart">
             <div class="inputbox2">
-                <input type="text" placeholder="Enter your Username" name="username_field" required> <br>
-                <input type="email" placeholder="Enter your Email" name="email_field" required> <br>
-                <input type="number" placeholder="Enter your Contact No" name="contact_field" required> <br>
-                <input type="password" placeholder="Enter your Password" name="password_field" required> <br>
+                <input type="text" placeholder="Enter your Username" name="username" required> <br>
+                <input type="email" placeholder="Enter your Email" name="email" required> <br>
+                <input type="tel" placeholder="Enter your Contact No" name="contact" required> <br>
+                <input type="password" placeholder="Enter your Password" name="password" required> <br>
             </div>
             <div>
                 <input type="submit" value="Register" name="btn_reg">
@@ -32,4 +47,5 @@
         </form>
     </div>
 </body>
+
 </html>
