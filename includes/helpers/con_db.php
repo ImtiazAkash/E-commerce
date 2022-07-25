@@ -7,4 +7,5 @@
     $dbCon = mysqli_connect($host, $userName, $pwd, $dbName);
     @define("BASE", "http://localhost/E-commerce/");
     @define("REGISTER", "http://localhost/E-commerce/includes/layouts/register.php");
+    @define("LOGIN", "http://localhost/E-commerce/includes/layouts/login.php");
 ?>

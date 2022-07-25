@@ -13,11 +13,22 @@
 
 <body>
     <div class="signup-form mt-5 shadow-lg">
+    <?php
+        if (@$_SESSION['loginMsg'] != "") {
+        ?>
+
+            <div class="alert alert-warning" role="alert">
+                <?= $_SESSION['loginMsg']; ?>
+
+            </div>
+        <?php echo $_SESSION['loginMsg'] = "";
+        } ?>
+
         <div>
             <h2>Login</h2>
             <hr class="mb-3">
         </div>
-        <form>
+        <form action="../actions/login_action.php" method="post" enctype="multipart">
             <div class="inputbox">
                 <input style="margin-bottom: 2%;" type="email" placeholder="Email" name="email_field" required> <br>
                 <input style="margin-bottom: 2%" type="password" placeholder="Password" name="password_field" required>
