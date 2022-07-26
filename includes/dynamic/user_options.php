@@ -13,8 +13,8 @@
 
 <body>
     <div class="usr_box shadow-lg">
-        <button onclick="window.location.href='./add_product.php'" type="button" class="btn usr_btn btn-outline-info " style="margin-right: 5px;">Add Product</button>
-        <button  type="button" class="btn usr_btn btn-outline-info inline-block" style="margin-left: 5px; "><span style="color: green;">Update</span>/<span style="color: red;">Delete</span></button>
+        <a href="./add_product.php" class="btn usr_btn btn-outline-info inline-block" style="margin-right: 5px;">Add Product</a>
+        <a href="./showUserProduct.php" class="btn usr_btn btn-outline-info inline-block" style="margin-left: 5px; "><span style="color: green;">Update</span>/<span style="color: red;">Delete</span></a>
     </div>
 </body>
 
