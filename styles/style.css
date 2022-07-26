@@ -20,6 +20,7 @@
 
 .usr_box {
   width: 50%;
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -29,4 +30,17 @@
 .usr_btn {
   height: 70px;
   width: 130px;
+}
+
+.description_style {
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description_style:hover {
+  white-space: normal; 
+  overflow: visible;
+  width: 100%;
 }

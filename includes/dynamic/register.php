@@ -1,6 +1,6 @@
 <?php
-session_start();
-include_once('./header.php') ?>
+include_once('../layouts/header.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@ include_once('./header.php') ?>
     <title>Register</title>
 </head>
 
-<body>0
+<body>
     <div class="signup-form mt-5 shadow-lg">
         <?php
         if (@$_SESSION['msg'] != "") {
@@ -38,11 +38,11 @@ include_once('./header.php') ?>
                 <input type="password" placeholder="Enter your Password" name="password" required> <br>
             </div>
             <div>
-                <input type="submit" value="Register" name="btn_reg">
+                <input class="btn btn-primary" type="submit" value="Register" name="btn_reg">
             </div>
             <!-- Register buttons -->
             <div class="text-center">
-                <p>Have an Account? <a href="/E-commerce/includes/layouts/login.php">Login</a></p>
+                <p>Have an Account? <a href="/E-commerce/includes/dynamic/login.php">Login</a></p>
             </div>
         </form>
     </div>

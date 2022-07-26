@@ -22,15 +22,15 @@
           <a class="nav-link active" aria-current="page" href="/E-commerce">Home</a>
           <?php if (@$_SESSION['user'] == "") { ?>
             <div>
-              <a class="nav-link" href="/E-commerce/includes/layouts/login.php">Login</a>
+              <a class="nav-link" href="/E-commerce/includes/dynamic/login.php">Login</a>
             </div>
           <?php } ?>
           <?php if (@$_SESSION['user'] != "") { ?>
             <div>
-              <a class="nav-link" href="/E-commerce/includes/layouts/user_options.php">More</a>
+              <a class="nav-link" href="/E-commerce/includes/dynamic/user_options.php">More</a>
             </div>
           <?php } ?>
-          <a class="nav-link" href="/E-commerce/includes/layouts/about.php">About Us</a>
+          <a class="nav-link" href="/E-commerce/includes/dynamic/about.php">About Us</a>
         </div>
       </div>
     </div>

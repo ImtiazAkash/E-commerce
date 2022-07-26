@@ -1,4 +1,4 @@
-<?php include_once('./header.php') ?>
+<?php include_once('../layouts/header.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,11 +34,11 @@
                 <input style="margin-bottom: 2%" type="password" placeholder="Password" name="password_field" required>
             </div>
             <div>
-                <input type="submit" value="Login" name="btn_login">
+                <input class="btn btn-primary" type="submit" value="Login" name="btn_login">
             </div>
             <!-- Register buttons -->
             <div class="text-center">
-                <p>Not a member? <a href="/E-commerce/includes/layouts/register.php">Register</a></p>
+                <p>Not a member? <a href="/E-commerce/includes/dynamic/register.php">Register</a></p>
             </div>
         </form>
     </div>

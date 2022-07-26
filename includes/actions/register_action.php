@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    require_once("../helpers/con_db.php");
+    require_once('../helpers/con_db.php');
     if(isset($_POST['btn_reg']) == "Register") {
         $Name = $_POST['username'];
         $Email = $_POST['email'];
