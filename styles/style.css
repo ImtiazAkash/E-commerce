@@ -17,3 +17,16 @@
     height: 30px;
     margin-bottom: 8px;
 }
+
+.usr_box {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2%;
+}
+
+.usr_btn {
+  height: 70px;
+  width: 130px;
+}

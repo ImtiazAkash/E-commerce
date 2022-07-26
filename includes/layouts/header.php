@@ -20,7 +20,16 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="/E-commerce">Home</a>
-          <a class="nav-link" href="/E-commerce/includes/layouts/login.php">Login</a>
+          <?php if (@$_SESSION['user'] == "") { ?>
+            <div>
+              <a class="nav-link" href="/E-commerce/includes/layouts/login.php">Login</a>
+            </div>
+          <?php } ?>
+          <?php if (@$_SESSION['user'] != "") { ?>
+            <div>
+              <a class="nav-link" href="/E-commerce/includes/layouts/user_options.php">More</a>
+            </div>
+          <?php } ?>
           <a class="nav-link" href="/E-commerce/includes/layouts/about.php">About Us</a>
         </div>
       </div>

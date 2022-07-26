@@ -30,7 +30,7 @@ include_once('./header.php') ?>
             <h2>Register</h2>
             <hr class="mb-3">
         </div>
-        <form action="../actions/insert_action.php" method="post" enctype="multipart">
+        <form action="../actions/register_action.php" method="post" enctype="multipart">
             <div class="inputbox2">
                 <input type="text" placeholder="Enter your Username" name="username" required> <br>
                 <input type="email" placeholder="Enter your Email" name="email" required> <br>
