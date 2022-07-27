@@ -28,7 +28,7 @@ require_once('./includes/actions/showProduct_action.php') ?>
                 <div class="card" style="width: 18rem; display: inline-block;">
                     <img src="./Images/product.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"><?php echo $recShow->product_name; ?></h5>
+                        <h5 class="description_style card-title"><?php echo $recShow->product_name; ?></h5>
                         <p class="description_style"><?php echo $recShow->product_description; ?></p>
                         <a href="#" class="btn btn-primary">Add to Cart</a>
                     </div>

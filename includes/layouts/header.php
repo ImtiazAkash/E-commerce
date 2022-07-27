@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="/E-commerce">Home</a>
-          <a href="../dynamic/product_search.php" class="nav-link" style="margin-right: 5px; margin-left: 5px;">Search Product</a>
+          <a href="/E-commerce/includes/dynamic/product_search.php" class="nav-link" style="margin-right: 5px; margin-left: 5px;">Search Product</a>
           <?php if (@$_SESSION['user'] == "") { ?>
             <div>
               <a class="nav-link" href="/E-commerce/includes/dynamic/login.php">Login</a>
