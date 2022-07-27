@@ -33,12 +33,12 @@ require_once('../actions/showUserProduct_action.php') ?>
 
         ?>
                 <div class="card" style="width: 18rem; display: inline-block;">
-                    <img src="../../Images/johncena.jpg" class="card-img-top" alt="...">
+                    <img src="../../Images/product.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $recShow->product_name; ?></h5>
                         <p class="description_style"><?php echo $recShow->product_description; ?></p>
-                        <a href="./updateProduct.php" class="btn btn-primary">Update</a>
-                        <a href="#" class="btn btn-primary">Delete</a>
+                        <a href="./updateProduct.php?updtID=<?php echo $recShow->product_id; ?>" class="btn btn-primary">Update</a>
+                        <a href="../actions/delete_action.php?dltID=<?php echo $recShow->product_id; ?>" class="btn btn-primary">Delete</a>
                     </div>
                 </div>
         <?php $i++;

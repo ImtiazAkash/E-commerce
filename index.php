@@ -14,6 +14,10 @@ require_once('./includes/actions/showProduct_action.php') ?>
 
 <body>
 
+    <form action="" method="post">
+        <input class="btn btn-primary" type="submit" value="Sort" name="sort_btn">
+    </form>
+
     <div class="container">
 
         <?php if ($numData > 0) {
@@ -22,7 +26,7 @@ require_once('./includes/actions/showProduct_action.php') ?>
 
         ?>
                 <div class="card" style="width: 18rem; display: inline-block;">
-                    <img src="./Images/johncena.jpg" class="card-img-top" alt="...">
+                    <img src="./Images/product.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $recShow->product_name; ?></h5>
                         <p class="description_style"><?php echo $recShow->product_description; ?></p>

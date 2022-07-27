@@ -8,7 +8,7 @@
         $Password = $_POST['password'];
 
         // data insertion
-        $insertData = "'$Name', '$Email', '$Contact', '$Password'";
+        $insertData = "'NULL','$Name', '$Email', '$Contact', '$Password'";
         $insertSQL = "insert into tbl_user values($insertData)";
         $insertQuery = @mysqli_query($dbCon, $insertSQL) or die("Error in table info insertion".mysqli_error($dbCon));
 

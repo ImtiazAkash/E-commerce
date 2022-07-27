@@ -7,7 +7,7 @@
         $product_description = mysqli_real_escape_string($dbCon,$_POST['product_description']);
         $user = $_SESSION['user'];
 
-        $insertData = "'$product_name', '$product_description', '$user->email'";
+        $insertData = "'NULL','$product_name', '$product_description', '$user->usr_id'";
         $insertSQL = "insert into tbl_product values($insertData)";
         $insertQuery = @mysqli_query($dbCon, $insertSQL) or die("Error in product insertion".mysqli_error($dbCon));
 
